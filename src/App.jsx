@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { Routes, Route } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { Analytics } from '@vercel/analytics/react';
 
 import { Account, Base, Cart, ChangePassword, CityRestaurants, FavoriteRestaurants, Home, MyRestaurants, OrderConfirmation, OrderDetail, Orders, ResetPassword, Search, SearchByCuisine, SearchDishes, SearchRestaurant, ViewRestaurant } from "./pages/customer";
 import { ActiveOrders, Dashboard, ItemDetail, NewOrders, OrderAnalysis, OrderHistory, RestaurantDetail, RestaurantMenu, RestaurantOrderDetail } from "./pages/owner";
@@ -74,6 +75,7 @@ function App() {
 
   return (
     <>
+      <Analytics />
       <Notification />
 
       <Header />
