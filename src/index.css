@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    min-width: 320px;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+}
+
+.myShadow{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
