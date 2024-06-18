@@ -26,7 +26,7 @@ export default function InformationField({restaurantId, setRestaurant, icon, lab
             setFormErrors({[name]: "This field is required!"});
         }
         else{
-            const [data, responseStatus] = await serverRequest(`/api/owner/update-restaurant/${restaurantId}/`, "POST", true, fdata);
+            const [data, responseStatus] = await serverRequest(`/api/owner/update-restaurant/${restaurantId}/`, "PATCH", true, fdata);
 
             if (responseStatus === 200){
                 setRestaurant(data);
