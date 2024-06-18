@@ -18,6 +18,7 @@ export default async function changeImage(token, fdata, urlPath, setData, setIsP
         if (response.status === 200){
             setData(data);
             setIsProcessing(false);
+            setGlobalNotification({message: "Image Updated!", success: true});
             return;
         }
         else if (response.status === 400){
