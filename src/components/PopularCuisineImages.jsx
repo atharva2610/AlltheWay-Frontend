@@ -21,7 +21,7 @@ export default function PopularCuisineImages() {
 
 
   return (
-    <div ref={reference} className="grid grid-flow-col auto-cols-max gap-4 mb-16 overflow-x-auto">
+    <div ref={reference} className="grid grid-flow-col auto-cols-max gap-8 mb-16 overflow-x-auto">
       {
         popularCuisines.map(cuisine => (
           <Link to={"/popular/" + cuisine.name.toLowerCase()} key={cuisine.name} >

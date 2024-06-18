@@ -140,7 +140,7 @@ export default function Dashboard() {
                         restaurant ?
                             <Outlet context={[restaurant, setRestaurant]}/>
                         :
-                            <TextMessage message="Restaurant Not Found" /> 
+                            <TextMessage message="Restaurant Not Found!" /> 
                 }
             </div>
         </section>

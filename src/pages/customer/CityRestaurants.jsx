@@ -125,7 +125,7 @@ export default function CityRestaurants() {
                                     }
                                 </div>
                         :
-                            <TextMessage message="No result Found." />
+                            <TextMessage message="No Results Found!" />
                     }
                 </section>
             </>

@@ -86,7 +86,7 @@ export default function MyRestaurants() {
                                             
                                         </div>
                                     :
-                                    <TextMessage message={"No restaurant to show."} />
+                                    <TextMessage message={"No Restaurant To Show."} />
                             }
                         </div>
                     </>
