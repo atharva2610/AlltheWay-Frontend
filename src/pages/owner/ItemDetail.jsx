@@ -8,7 +8,6 @@ import ImageForm from "../../forms/ImageForm";
 
 import useServerRequest from "../../helper/useServerRequest";
 
-import { baseURL } from "../../configrations/backendConfig";
 
 export default function ItemDetail(){
 
@@ -113,7 +112,7 @@ export default function ItemDetail(){
 
                                 {/* Item */}
                                 <div className="flex gap-4 md:gap-8 mb-8">
-                                    <img className="bg-gray-200 size-24 md:size-32 object-cover rounded-2xl" src={`${baseURL}${item.image}`} alt="" />
+                                    <img className="bg-gray-200 size-24 md:size-32 object-cover rounded-2xl" src={item.image} alt="" />
 
                                     <div>
                                         <div className="flex items-center gap-2 mb-4">

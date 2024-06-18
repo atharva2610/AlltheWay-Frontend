@@ -1,11 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import { Link, useNavigate, useOutletContext } from "react-router-dom";
+import { Link, useOutletContext } from "react-router-dom";
 
 import ItemForm from "../../forms/ItemForm";
 
 import { Loading, TextMessage, SecondaryButton, Icon, VegTag } from "../../components";
-
-import { baseURL } from "../../configrations/backendConfig";
 
 import useServerRequest from "../../helper/useServerRequest";
 import { useSelector } from "react-redux";
@@ -120,7 +118,7 @@ export default function RestaurantMenu() {
                                             {
                                                 items.map( item => (
                                                     <div className="flex items-center gap-2 md:gap-4 py-4 ">
-                                                        <img src={baseURL+item.image} className="size-16 md:size-20 rounded-lg" />
+                                                        <img src={item.image} className="size-16 md:size-20 rounded-lg" />
                                                         <VegTag isVeg={item.is_veg}/>
                                                         <Link to={`item/${item.id}`} className="text-lg flex-1 capitalize truncate">{item.name.toLowerCase()}</Link>
                                                         <h3 className="flex items-center text-lg"><Icon iconName="currency_rupee" /> {item.price}</h3>

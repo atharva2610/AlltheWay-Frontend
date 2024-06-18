@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { Icon, IconButton, ItemCard, ItemModal, Loading, QuantityChangeButtons, TextMessage, VegTag } from "../../components";
 
 import useServerRequest from "../../helper/useServerRequest";
-import { baseURL } from "../../configrations/backendConfig";
+
 import { useDispatch, useSelector } from "react-redux";
 import { addToFavorite, removeFromFavorite } from "../../reduxStore/favoriteRestaurantsSlice";
 
@@ -110,7 +110,7 @@ function ViewRestaurant() {
                                 {/* Restaurant Details */}
                                 <div className="flex flex-col gap-4 mb-16">
 
-                                    <img className="bg-gray-200 w-full h-40 sm:h-64 md:h-80 mb-8 object-cover rounded-3xl myShadow" src={baseURL+restaurant.image} alt="" />
+                                    <img className="bg-gray-200 w-full h-40 sm:h-64 md:h-80 mb-8 object-cover rounded-3xl myShadow" src={restaurant.image} alt="" />
 
                                     {/* Restaurant Name */}
                                     <h1 className="flex items-center gap-2 text-2xl capitalize">

@@ -76,7 +76,7 @@ export default function RestaurantDetail() {
                 {/* Outlet Banner Image Container */}
                 <div className="mb-8">
                     {/* Image */}
-                    <img className="bg-gray-200 w-full h-48 sm:h-64 md:h-96 object-cover rounded-[36px] myShadow" src={baseURL+restaurant.image} alt="" />
+                    <img className="bg-gray-200 w-full h-48 sm:h-64 md:h-96 object-cover rounded-[36px] myShadow" src={restaurant.image} alt="" />
 
                     {/* button to open Image Form */}
                     <SecondaryButton iconName="add_photo_alternate" extraCSS="ml-auto my-8" onClick={handleOpenImageForm} >Change Image</SecondaryButton>

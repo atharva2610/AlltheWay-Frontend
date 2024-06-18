@@ -2,7 +2,6 @@ import Modal from "./Modal";
 import Icon from "./Icon";
 import VegTag from "./VegTag";
 
-import { baseURL } from "../configrations/backendConfig";
 
 export default function ItemModal({reference, item, restaurant=null}){
 
@@ -22,7 +21,7 @@ export default function ItemModal({reference, item, restaurant=null}){
                             </div>
                         )}
 
-                        <img  className="bg-gray-200 size-28 object-cover mb-8 m-auto rounded-2xl" src={`${baseURL}${item.image}`} alt="" />
+                        <img  className="bg-gray-200 size-28 object-cover mb-8 m-auto rounded-2xl" src={item.image} alt="" />
 
                         <div className="flex items-center gap-2 mb-4">
                             <VegTag isVeg={item.is_veg}/>

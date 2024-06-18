@@ -7,7 +7,6 @@ import VegTag from "./VegTag";
 
 import { addToFavorite, removeFromFavorite } from "../reduxStore/favoriteRestaurantsSlice";
 
-import { baseURL } from "../configrations/backendConfig";
 
 
 export default function RestaurantCard({restaurant, cuisines}) {
@@ -45,7 +44,7 @@ export default function RestaurantCard({restaurant, cuisines}) {
             <Link to={`/restaurant/${restaurant.id}`} className={`relative w-80 flex flex-col gap-4 ${restaurant.temporary_close ? "grayscale" : ""}`}>
                 {restaurant.temporary_close && <div className="z-10 absolute top-1/3 left-0 bg-red-500 w-80 p-2 text-white text-xl text-center myShadow">Temporary Close</div>}
                 
-                <img className="bg-gray-200 w-full h-44 object-cover rounded-3xl myShadow" src={`${baseURL}${restaurant.image}`} alt="" />
+                <img className="bg-gray-200 w-full h-44 object-cover rounded-3xl myShadow" src={restaurant.image} alt="" />
 
                 <div className="flex items-center gap-2">
                     <Icon iconName="store"/>
