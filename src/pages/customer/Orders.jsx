@@ -175,7 +175,7 @@ export default function Orders() {
                                             </div>
                                         </>
                                     :
-                                        <TextMessage message="No Order to show!" />
+                                        <TextMessage message="No Past Orders to show!" />
                                 :
                                     <TextMessage message="Unable to load Orders!" />
                             }

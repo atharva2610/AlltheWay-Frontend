@@ -55,6 +55,8 @@ export default function SearchByCuisine(){
 
     return (
         <section className="max-w-3xl m-auto my-8">
+            <h1 className="mb-16 text-xl font-bold capitalize">Choose From Popular</h1>
+
             <PopularCuisineImages />
 
             {

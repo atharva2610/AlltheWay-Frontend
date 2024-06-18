@@ -39,9 +39,9 @@ export default function Footer() {
                 <ul>
                     <li className="mb-2 text-lg">Company :</li>
                     <li className="mb-2 text-base capitalize hover:text-yellow-500"><Link to="/myrestaurants" >Register restaurant</Link></li>
-                    <li className="mb-2 text-base capitalize hover:text-yellow-500"><a href="https://atharva26.vercel.app" target="_blank" >About us</a></li>
+                    <li className="mb-2 text-base capitalize hover:text-yellow-500"><a href="https://atharvav26.vercel.app/alltheway" target="_blank" >About us</a></li>
                     <li className="mb-2 text-base capitalize hover:text-yellow-500"><a href="mailto:atharvavishwakarma526@gmail.com">Contact Us</a></li>
-                    <li className="mb-2 text-base capitalize hover:text-yellow-500"><a href="https://atharva26.vercel.app" target="_blank" >About Developer</a></li>
+                    <li className="mb-2 text-base capitalize hover:text-yellow-500"><a href="https://atharvav26.vercel.app" target="_blank" >About Developer</a></li>
                 </ul>
             </div>
         </footer>
