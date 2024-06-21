@@ -46,13 +46,14 @@ export default function ItemForm({reference, item=null, setItems=null, setItem=n
     }
 
 
-    async function addMenuItemRequest(fdata){
+    async function addMenuItemRequest(fdata, form){
         const [data, responseStatus] = await serverRequest("/api/owner/add-menu-item/", "POST", true, fdata);
 
         if (responseStatus === 201){
             setItems(prev => prev ? [...prev, data] : [data]);
             setNewNotification("Item Added to Menu.", true);
             reference.current.classList.add("hidden");
+            form.reset();
         }
         else if (responseStatus === 400){
             setErrors(data);
@@ -83,7 +84,7 @@ export default function ItemForm({reference, item=null, setItems=null, setItem=n
                 updateMenuItemRequest(temp);
             else{
                 temp["restaurant"] = restaurant_id;
-                addMenuItemRequest(temp);
+                addMenuItemRequest(temp, event.target);
             }
         }
         else{

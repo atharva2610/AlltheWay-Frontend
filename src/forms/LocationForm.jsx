@@ -54,7 +54,7 @@ export default function LocationForm({reference, setRestaurant=null, location=nu
     return (
         <Modal reference={reference}>
             <Form handleFormSubmit={handleFormSubmit} formTitle={"Location Form"} isProcessing={isProcessing} errors={formErrors}>
-                <DeliveryLocationFields location={location} errors={formErrors} />
+                <DeliveryLocationFields location={location} errors={formErrors} isRestaurant={true}/>
             </Form>
         </Modal>
     );
